@@ -16,8 +16,14 @@ const assignment = {};
  */
 function sumOfNumbersTo(destination) {
     let sum = 0;
+    for (let i = 1; i <= destination; i++){
+        sum += i
+    }
     return sum
 }
+let first = sumOfNumbersTo(10)
+console.log(first)
+
 
 
 // assignment.sumOfNumbersTo = sumOfNumbersTo;
@@ -33,11 +39,16 @@ function sumOfNumbersTo(destination) {
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
 function countEvenNumbersWithin(destination) {
-    // Write your code here
-    // get the number from 1 to destination
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
+    for (let i = 1; i <= destination; i++) {
+        if (i % 2 === 0) {
+            sum += i
+            arrayOfEvenNumbers.push(i)
+            count = arrayOfEvenNumbers.length
+        }
+    }
 
     return {
         // property value shorthand
@@ -48,6 +59,8 @@ function countEvenNumbersWithin(destination) {
         arrayOfEvenNumbers
     };
 }
+let second = countEvenNumbersWithin(10);
+console.log(second)
 
 // assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
