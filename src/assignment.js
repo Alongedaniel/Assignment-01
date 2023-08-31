@@ -21,12 +21,10 @@ function sumOfNumbersTo(destination) {
     }
     return sum
 }
-let first = sumOfNumbersTo(10)
-console.log(first)
 
 
 
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
+assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -59,10 +57,8 @@ function countEvenNumbersWithin(destination) {
         arrayOfEvenNumbers
     };
 }
-let second = countEvenNumbersWithin(10);
-console.log(second)
 
-// assignment.countEvenNumbersWithin = countEvenNumbersWithin;
+assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
